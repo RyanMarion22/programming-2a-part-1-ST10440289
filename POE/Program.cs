@@ -66,7 +66,7 @@ namespace CybersecurityAwarenessBot
             }
         }
 
-        // Display the lock ASCII art on startup
+      
         static void DisplayAsciiArt()
         {
             string asciiArt = @"
