@@ -174,7 +174,15 @@ namespace CybersecurityAwarenessBot
         }
 
         // Show a list of 3 basic security tips
-      
+        static void ShowSecurityTips()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(" Here are 3 quick security tips:");
+            Console.WriteLine("   1 Tip 1 - Keep your software and OS updated.");
+            Console.WriteLine("   2️ Tip 2 - Avoid using public Wi-Fi for sensitive info.");
+            Console.WriteLine("   3️ Tip 3 - Use 2FA on your accounts.");
+            Console.ResetColor();
+        }
 
         // Print a divider line (used to separate sections)
         static void PrintDivider()
