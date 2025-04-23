@@ -127,21 +127,8 @@ namespace CybersecurityAwarenessBot
                     Console.WriteLine(" Always check URLs, avoid clicking suspicious links, and use secure (HTTPS) websites.");
                     break;
 
-                case var _ when input.Contains("security tip") || input.Contains("security tips"):
-                    ShowSecurityTips();
-                    break;
-
-                case var _ when input.Contains("tip 1"):
-                    Console.WriteLine(" Tip 1: Keep your software and operating system up to date.");
-                    break;
-
-                case var _ when input.Contains("tip 2"):
-                    Console.WriteLine(" Tip 2: Avoid using public Wi-Fi for sensitive tasks like online banking.");
-                    break;
-
-                case var _ when input.Contains("tip 3"):
-                    Console.WriteLine(" Tip 3: Enable two-factor authentication (2FA) on important accounts.");
-                    break;
+               
+                
 
                 case var _ when input.Contains("what can i ask"):
                     ShowOptions();
