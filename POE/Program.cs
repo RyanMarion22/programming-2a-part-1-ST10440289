@@ -8,13 +8,13 @@ namespace CybersecurityAwarenessBot
     {
         static void Main()
         {
-            // Set the title of the window
+        
             Console.Title = "Cybersecurity Awareness Bot";
 
-            // Play the greeting sound (if available)
+           
             PlayVoiceGreeting();
 
-            // Show a lock-themed ASCII art intro
+        
             DisplayAsciiArt();
 
             // Print a line to separate sections
