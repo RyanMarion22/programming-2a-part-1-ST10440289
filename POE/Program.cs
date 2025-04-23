@@ -8,13 +8,13 @@ namespace CybersecurityAwarenessBot
     {
         static void Main()
         {
-        
+            // Set the title of the window
             Console.Title = "Cybersecurity Awareness Bot";
 
-           
+            // Play the greeting sound (if available)
             PlayVoiceGreeting();
 
-        
+            // Show a lock-themed ASCII art intro
             DisplayAsciiArt();
 
             // Print a line to separate sections
@@ -207,7 +207,3 @@ namespace CybersecurityAwarenessBot
 
 
 
-// Refernces 
-//GeeksforGeeks (2018). Switch Statement in C# - GeeksforGeeks. [online] GeeksforGeeks. Available at: https://www.geeksforgeeks.org/switch-statement-in-c-sharp/.
-//Janell (2016). Console Application ASCII Design • Programming is Fun. [online] Programming is Fun. Available at: https://programmingisfun.com/command-line-ascii-design/ [Accessed 23 Apr. 2025].
-//Troelsen, A. and Japikse, P. (2021). Pro C# 9 with .NET 5 : foundational principles and practices in programming. Berkeley, Ca: Apress L. P., . Copyright.
