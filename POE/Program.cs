@@ -66,7 +66,7 @@ namespace CybersecurityAwarenessBot
             }
         }
 
-      
+        // Display the lock ASCII art on startup
         static void DisplayAsciiArt()
         {
             string asciiArt = @"
@@ -127,8 +127,21 @@ namespace CybersecurityAwarenessBot
                     Console.WriteLine(" Always check URLs, avoid clicking suspicious links, and use secure (HTTPS) websites.");
                     break;
 
-               
-                
+                case var _ when input.Contains("security tip") || input.Contains("security tips"):
+                    ShowSecurityTips();
+                    break;
+
+                case var _ when input.Contains("tip 1"):
+                    Console.WriteLine(" Tip 1: Keep your software and operating system up to date.");
+                    break;
+
+                case var _ when input.Contains("tip 2"):
+                    Console.WriteLine(" Tip 2: Avoid using public Wi-Fi for sensitive tasks like online banking.");
+                    break;
+
+                case var _ when input.Contains("tip 3"):
+                    Console.WriteLine(" Tip 3: Enable two-factor authentication (2FA) on important accounts.");
+                    break;
 
                 case var _ when input.Contains("what can i ask"):
                     ShowOptions();
@@ -160,7 +173,10 @@ namespace CybersecurityAwarenessBot
             Console.ResetColor();
         }
 
-     
+        // Show a list of 3 basic security tips
+      
+
+        // Print a divider line (used to separate sections)
         static void PrintDivider()
         {
             Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -183,3 +199,7 @@ namespace CybersecurityAwarenessBot
 
 
 
+// Refernces 
+//GeeksforGeeks (2018). Switch Statement in C# - GeeksforGeeks. [online] GeeksforGeeks. Available at: https://www.geeksforgeeks.org/switch-statement-in-c-sharp/.
+//Janell (2016). Console Application ASCII Design • Programming is Fun. [online] Programming is Fun. Available at: https://programmingisfun.com/command-line-ascii-design/ [Accessed 23 Apr. 2025].
+//Troelsen, A. and Japikse, P. (2021). Pro C# 9 with .NET 5 : foundational principles and practices in programming. Berkeley, Ca: Apress L. P., . Copyright.
